@@ -2,18 +2,38 @@ package org.example;
 
 public class Main {
     public static void main(String[] args) {
+        /*
+        //1. crear una instancia de la clase Empleado
+        Empleado objetoTipoEmpleado=new Empleado();
 
-        //EN EL MAIN LLAMO A MIS CLASES
-        //EN EL MAIN CREO LOS OBJETOS DE MIS CLASES
-        //EN EL MAIN CREO UNA INSTANCIA DE MI CLASE
-        //EN EL MAIN LE SACO COPIA A MIS CLASES Y CREO OBJETOS
-        Invitado objetoDeClaseInvitado=new Invitado();
-        Invitado objeto2=new Invitado(333,true,"Juan",10000);
+        //2.A genero un retorno lo guardo en una variable y despues lo imprimo
+        String resultado=objetoTipoEmpleado.saludar("Lucho Diaz" ); //accediendo a los metodos de mi clase Empleado
+        System.out.println(resultado);
 
+        //2.B imprimo la funcion del objeto
+        System.out.println(objetoTipoEmpleado.saludar("Luisa Herrera" ));
 
-        //obtener el valor de los atributos
-        System.out.println(objetoDeClaseInvitado.nombre);
-        System.out.println(objeto2.nombre);
+        */
+
+        //1. Para usar una clase creo un objeto
+        Empleado objeto=new Empleado();//llame al constructor
+
+        //2. utilizar el objeto para acceder a un atributo
+        objeto.nombre="Oscar Guzman";
+
+        //3. utilizar el objeto para acceder a un metodo
+        String resultado=objeto.saludar("Luisa Herrera");
+
+        //4. salidas por consola
+        //salida de un atributo
+        System.out.println(objeto.nombre);
+
+        //salida del retorno de la funcion
+        System.out.println(objeto.saludar("Luisa Herrera Gomez"));
+
+        System.out.println(resultado);
+        int sumatoria=objeto.sumar(5,3);
+        System.out.println(sumatoria);
 
     }
 }
